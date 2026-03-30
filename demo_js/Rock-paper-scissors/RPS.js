@@ -16,7 +16,7 @@ function getComputerChoice() {
     console.log(duhhh);
   }
   return comCho;
-}
+};
 
 // Function for getting Human choice
 function getHumanChoice() {
@@ -24,7 +24,7 @@ function getHumanChoice() {
   humCho = humCho.toLowerCase();
   console.log(`Your Move : ${humCho}`);
   return humCho;
-}
+};
 
 function playGame() {
   let humanScore = 0;
@@ -61,15 +61,15 @@ function playGame() {
       humanScore += 1;
     } else {
       console.log("WTF");
-    }
+    };
 
     console.log(humanScore);
     console.log(computerScore);
-  }
+  };
 
   for (i = 1; i <= 5; i++) {
     playRound();
-  }
+  };
 
   if (humanScore > computerScore) {
     console.log("You have won the game");
@@ -77,7 +77,7 @@ function playGame() {
     console.log("You have lost the game");
   } else {
     console.log("The game is a draw");
-  }
-}
+  };
+};
 
 playGame();
